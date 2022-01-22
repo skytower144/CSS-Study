@@ -1,5 +1,4 @@
 body {
-	margin-left: 100px;
 	background-color: #F7F7F7;
 }
 .container2 {
@@ -8,10 +7,11 @@ body {
 	margin-right: 100px;
 	margin-top: 80px;
 	display: flex;
+	justify-content: center;
 }
 
 .profile {
-	height: 800px;
+	height: 645px;
 	text-align: center;
 }
 
@@ -36,14 +36,15 @@ h1 {
 	flex-wrap: nowrap;
 	justify-content: flex-end;
 
-	max-height: 198px;
-	width: 1160px;
+	max-height: 175px;
+	min-width: 43vw;
 
 	margin-left: 20px;
 	border-radius: 10px;
 	box-shadow: 4px 4px 5px #959FB7;
 	/* background-color: #D2E2E2; */
 	background-image: url(bg.png);
+	background-size: cover;
 
 }
 
@@ -51,18 +52,20 @@ h2 {
 	white-space: nowrap;
 	margin: 80px 170px 50px 160px;
 	color: #223C16;
-	font-size: 40px;
+	font-size: 33px;
 	font-weight: 600;
 	font-family: 'Crimson Pro', serif;
 }
 
 .banner p {
-	margin: 150px 10px 5px 10px;
+
+	margin: 138px 10px 0px 8px;
 	text-decoration: underline;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	white-space: nowrap;
 	font-family: 'Indie Flower', cursive;
 	font-weight: 600;
+
 }
 
 .banner p:hover {
@@ -78,10 +81,27 @@ a:visited {
   color: inherit;
 }
 
-.secondRow {
+@media (max-width: 767px) {                  
+   .banner p {
+      white-space: normal;
+      margin-top: 105px;
+   }
+   .visiting {
+			color: #BBC7CC;
+	}
+}
+
+
+.outer {
 	display: flex;
+	align-items: center;
+}
+
+.secondRow {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
-	margin-left: 135px;
 	margin-bottom: 50px;
 }
 
@@ -90,10 +110,9 @@ a:visited {
 }
 
 .secondRow img {
-	height: 300px;
-	width: 400px;
+	height: 230px;
+	width: 315px;
 	object-fit: cover;
-	margin-right: 40px;
 	border-radius: 10px;
 
 	-webkit-transition: opacity 0.3s ease-in-out;
@@ -109,10 +128,14 @@ a:visited {
 	opacity: 0.5;
 }
 
+.blocks {
+	width: 370px;
+}
+
 .secondRow .blocks p {
 	margin-top: 15px;
 	margin-bottom: 35px;
-	width: 400px;
+	width: 315px;
 
 	text-align: center;
 	font-family: 'Indie Flower', cursive;
