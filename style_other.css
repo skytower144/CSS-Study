@@ -1,0 +1,12 @@
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 767px), (max-height: 855px) {
+
+	.orangeLine, footer {
+		display: none;
+	}
+}
